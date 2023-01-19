@@ -59,3 +59,5 @@ for num in range(lower, upper + 1):
                 break
         else:
             print(num)
+
+# In an if function, elif is short for "else if"
