@@ -66,14 +66,14 @@ def checkTie(board):
     global gameRunning
     if "-" not in board:
         printBoard(board)
-        print("It is a tie. You both suck!!")
+        print("It is a tie. You both can do better!!")
         gameRunning = False
 
 def checkWin():
     global gameRunning
     if checkDiagonal(board) or checkHorizontal(board) or checkVertical(board):
         printBoard(board)
-        print(f"The winner is {winner}!!! Congratulations, you're better than everyone!!!")
+        print(f"The winner is {winner}!!! Congratulations, you've won the game!!!")
         gameRunning = False
 
 # switch the player
@@ -85,7 +85,7 @@ def switchPlayer():
         currentPlayer = "X"
 
 
-# computer
+# Making the computer play against you
 def computer(board):
     while currentPlayer == "O":
         position = random.randint(0, 8)
